@@ -7,17 +7,16 @@ import styles from "./SongCard.module.css"
 import {playPause, setActiveSong} from "../../store/playerSlice";
 import PlayPause from "../PlayPause/PlayPause";
 
-const SongCard = ({song, i, data}) => {
-    const activeSong = `test`
+const SongCard = ({song, i, data, isPlaying,activeSong}) => {
     const dispatch = useDispatch();
 
     const handlePauseClick = () => {
-        // dispatch(playPause(false));
+        dispatch(playPause(false));
     };
 
     const handlePlayClick = () => {
-        // dispatch(setActiveSong({ song, data, i }));
-        // dispatch(playPause(true));
+        dispatch(setActiveSong({ song, data, i }));
+        dispatch(playPause(true));
     };
 
     return (
@@ -33,6 +32,9 @@ const SongCard = ({song, i, data}) => {
                             handlePlay={handlePlayClick}
                         />
                     </div>
+                    {/*TODO ПОФИКСИТЬ ЧТОБ ЗНАЧОК НЕ ПОЯВЛЯЛСЯ ДО НАВЕДЕНИЯ*/}
+                    {/*TODO ПОФИКСИТЬ ЧТОБ ЗНАЧОК НЕ ПОЯВЛЯЛСЯ ДО НАВЕДЕНИЯ*/}
+                    {/*TODO ПОФИКСИТЬ ЧТОБ ЗНАЧОК НЕ ПОЯВЛЯЛСЯ ДО НАВЕДЕНИЯ*/}
                     <img className={styles.songCard_image} src={song.images?.coverart} alt=""/>
                 </div>
                 <div className={styles.bottom}>

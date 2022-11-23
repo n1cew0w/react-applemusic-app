@@ -10,7 +10,7 @@ import SongCard from "../../components/SongCard/SongCard";
 
 export function MainPage() {
     const dispatch = useDispatch();
-    const {}= useSelector();
+
 
     const {data, isFetching, error} = useGetChartsRUQuery()
     const { activeSong, isPlaying } = useSelector((state) => state.player);
