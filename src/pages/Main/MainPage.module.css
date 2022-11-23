@@ -1,0 +1,15 @@
+.mainPage_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.songCard_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+@media (min-width: 640px) {
+.songCard_container{
+    justify-content: start;
+}
+}
