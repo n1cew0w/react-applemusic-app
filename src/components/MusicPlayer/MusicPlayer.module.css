@@ -1,0 +1,36 @@
+/*TAILWIND TO CSS FROM COPY CODE MUSIC PLAYER :D*/
+
+/*INDEX.JSX*/
+/*INDEX.JSX*/
+/*INDEX.JSX*/
+.mplayer_wrapper{
+    display: flex;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.mplayer_buttons{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+}
+/*CONTROLS.JSX*/
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+}
+/*SEEKBAR.JSX*/
+.seekbar{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}

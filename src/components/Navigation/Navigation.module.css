@@ -1,15 +1,17 @@
+
 .navigation{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5px;
+  margin-left: 28px;
+  align-items: start;
+
   background-color:#252526;
   color: #eeeeee;
   text-decoration:none;
+  flex-direction: column;
 
 }
 .logo{
-  padding: 7px;
+font-size: 28px;
 }
 .nav_img{
   width: 32px;
@@ -19,4 +21,44 @@
   text-decoration:none;
   margin-right: 10px;
   color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+
+
+
+}
+.logo_section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.nav_links{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  height: 28px;
+  background: #1f1f1f;
+  border-radius: 6px;
+  border: #404040 1px solid;
+  color: white;
+  margin-left: 5px;
+
+
+
+}
+.input:focus{
+  outline: none;
+  border: #ff4a50 2px solid;
+}
+.input_wrap{
+  display: flex;
+  align-items: center;
+
+}
+.icon_margin{
+  margin-right: 10px;
 }

@@ -2,12 +2,11 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import styles from "./SongCard.module.css"
-// import PlayPause from './PlayPause'
 
 import {playPause, setActiveSong} from "../../store/playerSlice";
 import PlayPause from "../PlayPause/PlayPause";
 
-const SongCard = ({song, i, data, isPlaying,activeSong}) => {
+const SongCard = ({song, isPlaying, activeSong, data, i}) => {
     const dispatch = useDispatch();
 
     const handlePauseClick = () => {
@@ -15,7 +14,7 @@ const SongCard = ({song, i, data, isPlaying,activeSong}) => {
     };
 
     const handlePlayClick = () => {
-        dispatch(setActiveSong({ song, data, i }));
+        dispatch(setActiveSong({song, data, i}));
         dispatch(playPause(true));
     };
 
@@ -44,7 +43,8 @@ const SongCard = ({song, i, data, isPlaying,activeSong}) => {
                         </Link>
                     </p>
                     <p className={styles.bottom_text_subtitle}>
-                        <Link to={song.artists ? `/artists/${song?.artists[0]?.adamid}` : '/top-artists'} className={styles.bottom_subtitle}>
+                        <Link to={song.artists ? `/artists/${song?.artists[0]?.adamid}` : '/top-artists'}
+                              className={styles.bottom_subtitle}>
                             {song.subtitle}
                         </Link>
                     </p>

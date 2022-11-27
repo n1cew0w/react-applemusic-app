@@ -12,3 +12,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.app{
+  position: relative;
+  display: flex;
+
+}
+.app_wrapper{
+  flex-direction: column;
+}
+
+.music_player{
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  /*background-image: background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));*/
+  height: 7rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  backdrop-blur: blur(16px);
+
+}
