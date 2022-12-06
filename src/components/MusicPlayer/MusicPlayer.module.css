@@ -3,34 +3,130 @@
 /*INDEX.JSX*/
 /*INDEX.JSX*/
 /*INDEX.JSX*/
-.mplayer_wrapper{
+.mplayer_wrapper {
+
     display: flex;
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1790px;
+    background-color: #2c2c2c;
+    margin-bottom: 25px;
 }
-.mplayer_buttons{
+
+.mplayer_buttons {
     display: flex;
     flex-direction: column;
     flex: 1 1 0%;
     justify-content: center;
     align-items: center;
 }
+
 /*CONTROLS.JSX*/
-.controls{
+.controls {
+    margin-right: 520px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.pointer{
+
+.pointer {
     cursor: pointer;
 }
+
 /*SEEKBAR.JSX*/
-.seekbar{
+.seekbar {
     display: none;
     flex-direction: row;
     align-items: center;
+}
+
+.seekbar_btn {
+    display: none;
+    color: #ffffff;
+}
+
+.seekbar_p {
+    color: #ffffff;
+}
+
+.seekbar_input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 6rem;
+    height: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+/*TRACK.JSX*/
+.track_wrapper {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.track_img_wrap {
+    margin-left: 260px;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.track_anim {
+    animation: spin 1s linear 0s infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.track_img {
+    border-radius: 9999px;
+    width: 70px;
+}
+
+.track_width {
+    width: 50%;
+}
+
+.track_p1 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.track_p2 {
+    color: #D1D5DB;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*VOLUME BAR*/
+.volume_wrap {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume {
+    margin-left: 0.5rem;
+    height: 0.25rem;
+
 }
