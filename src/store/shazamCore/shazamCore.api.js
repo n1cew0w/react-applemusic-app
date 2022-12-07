@@ -16,8 +16,19 @@ export const shazamCoreApi = createApi({
             query:() => ({
                 url: `/charts/country?country_code=RU`
             }),
-        })
+        }),
+        getSongDetails: builder.query({
+            query: ({songid}) => ({
+                url: `/tracks/details?track_id=${songid}`
+            }),
+        }),
+        getSongRelated: builder.query({
+            query: ({ songid }) =>({
+                url: `/tracks/related?track_id=${songid}`
+            })
+        }),
+
     })
 })
 
-export const {useGetChartsRUQuery} = shazamCoreApi
+export const {useGetChartsRUQuery,useGetSongDetailsQuery,useGetSongRelatedQuery} = shazamCoreApi
