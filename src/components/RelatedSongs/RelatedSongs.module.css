@@ -1,0 +1,18 @@
+.related_wrap{
+    display: flex;
+    flex-direction: column;
+}
+.related_songs{
+    margin-left: 25px;
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+
+}
+.related_content{
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+}

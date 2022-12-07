@@ -1,0 +1,69 @@
+.SongBar_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 97%;
+}
+.SongBar_wrap:hover {
+    background: #2c2c2c;
+}
+.SongBar_ternar1{
+    background: #2c2c2c;
+}
+.SongBar_ternar2{
+    background-color: transparent;
+}
+.SongBar_ternar3{
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.SongBar_h3{
+    margin-right: 0.75rem;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.SongBar_song{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+.SongBar_img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+}
+.artist{
+    display: flex;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    flex-direction: column;
+    flex: 1 1 0%;
+    justify-content: center;
+}
+.song_title{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+
+
+}
+.song_name{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+.song_subtitle{
+    margin-top: 0.25rem;
+    color: #D1D5DB;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}

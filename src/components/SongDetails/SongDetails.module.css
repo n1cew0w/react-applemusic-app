@@ -1,0 +1,38 @@
+.details_wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+}
+.lyrics_wrap{
+    margin-bottom: 2.5rem;
+
+}
+.lyrics{
+    margin-left: 25px;
+
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+
+}
+.lyrics-marg{
+    margin-top: 1.25rem;
+}
+.lyrics_text{
+    margin-left: 25px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    color: #9CA3AF;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+.lyrics_error{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    color: #9CA3AF;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
