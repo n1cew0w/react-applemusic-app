@@ -6,6 +6,8 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import styles from './index.css'
 import {useSelector} from "react-redux";
 import MusicPlayer from "./components/MusicPlayer";
+import ArtistDetails from "./components/ArtistDetails/ArtistDetails";
+import SongDetails from "./components/SongDetails/SongDetails";
 
 function App() {
     const { activeSong } = useSelector((state) => state.player);
@@ -20,6 +22,8 @@ function App() {
             <Routes>
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/music_hits' element={<MusicHitsPage/>}/>
+                <Route path='/artist/:id' element={<ArtistDetails/>}/>
+                <Route path='/songs/:songid' element={<SongDetails/>}/>
             </Routes>
 
         </>
