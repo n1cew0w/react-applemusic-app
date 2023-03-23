@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-applemusic-app/static/css/main.e2ce9e93.css",
+    "main.js": "/react-applemusic-app/static/js/main.d923dc93.js",
+    "static/media/png-apple-logo-9711.png": "/react-applemusic-app/static/media/png-apple-logo-9711.440b0d23ae61e3b7f708.png",
+    "index.html": "/react-applemusic-app/index.html",
+    "main.e2ce9e93.css.map": "/react-applemusic-app/static/css/main.e2ce9e93.css.map",
+    "main.d923dc93.js.map": "/react-applemusic-app/static/js/main.d923dc93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2ce9e93.css",
+    "static/js/main.d923dc93.js"
+  ]
+}
